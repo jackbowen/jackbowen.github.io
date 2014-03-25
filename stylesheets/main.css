@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+/* line 25, ../sass/main.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 36, ../sass/main.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 39, ../sass/main.scss */
+body {
+  line-height: 1;
+}
+
+/* line 42, ../sass/main.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 45, ../sass/main.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 49, ../sass/main.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, ../sass/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 80, ../sass/main.scss */
+body, html {
+  height: 100%;
+  font-family: 'Ubuntu Mono', Futura, sans-serif;
+  background: #f9f9f9;
+  color: #111111;
+}
+
+/* line 90, ../sass/main.scss */
+#links {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* line 96, ../sass/main.scss */
+#name {
+  height: 100%;
+  text-align: center;
+  background-color: #e8a9d4;
+}
+/* line 100, ../sass/main.scss */
+#name h1 {
+  margin: auto 0;
+}
+
+/* line 106, ../sass/main.scss */
+.slideWrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 113, ../sass/main.scss */
+.slide {
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 118, ../sass/main.scss */
+.slide img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 128, ../sass/main.scss */
+#stopAndFrisk {
+  background: red;
+}
+
+/* line 133, ../sass/main.scss */
+#tiltLamp {
+  background: orange;
+}
+
+/* line 138, ../sass/main.scss */
+#zenMode {
+  background: yellow;
+}
+
+/* line 143, ../sass/main.scss */
+#surrogateFlaneur {
+  background: green;
+}
+
+/* line 148, ../sass/main.scss */
+#personalSpaceMonitor {
+  background: blue;
+}
+
+/* line 153, ../sass/main.scss */
+#about {
+  background: purple;
+}

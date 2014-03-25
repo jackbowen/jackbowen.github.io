@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+/* line 28, ../sass/project.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 38, ../sass/project.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 41, ../sass/project.scss */
+body {
+  line-height: 1;
+}
+
+/* line 44, ../sass/project.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 47, ../sass/project.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 51, ../sass/project.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 55, ../sass/project.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 66, ../sass/project.scss */
+body {
+  font-family: 'Ubuntu Mono', Futura, sans-serif;
+  background: #f9f9f9;
+  color: #111111;
+}
+
+/* line 76, ../sass/project.scss */
+.extraWide h1 {
+  font-size: 200px;
+}
+
+/* line 84, ../sass/project.scss */
+.wide h1 {
+  font-size: 175px;
+}
+
+/* line 92, ../sass/project.scss */
+.standard h1 {
+  font-size: 130px;
+}
+
+/* line 100, ../sass/project.scss */
+.narrow h1 {
+  font-size: 95px;
+}
+
+/* line 108, ../sass/project.scss */
+.extraNarrow h1 {
+  font-size: 36px;
+}
+
+/* line 114, ../sass/project.scss */
+#title {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 119, ../sass/project.scss */
+#title h1 {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #f39;
+}
+
+/* line 128, ../sass/project.scss */
+#content {
+  z-index: -1;
+  margin: 0 10%;
+  overflow: hidden;
+}
+/* line 133, ../sass/project.scss */
+#content p {
+  font-size: 20px;
+  z-index: inherit;
+  overflow: hidden;
+}
+
+/* line 149, ../sass/project.scss */
+#map {
+  width: 100%;
+}
