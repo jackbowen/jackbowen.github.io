@@ -56,7 +56,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 80, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 body, html {
   height: 100%;
   font-family: 'Ubuntu Mono', Futura, sans-serif;
@@ -64,68 +64,106 @@ body, html {
   color: #111111;
 }
 
-/* line 90, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 #links {
   position: absolute;
   visibility: hidden;
 }
 
-/* line 96, ../sass/main.scss */
-#name {
-  height: 100%;
-  text-align: center;
-  background-color: #e8a9d4;
-}
-/* line 100, ../sass/main.scss */
-#name h1 {
-  margin: auto 0;
-}
-
-/* line 106, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 .slideWrapper {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .slide {
   position: fixed;
   height: 100%;
   overflow: hidden;
   width: 100%;
 }
-/* line 118, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .slide img {
   width: 100%;
   overflow: hidden;
 }
+/* line 118, ../sass/main.scss */
+.slide h1 {
+  font-size: 7em;
+  text-align: center;
+}
 
 /* line 128, ../sass/main.scss */
+#name {
+  cursor: s-resize;
+  text-align: center;
+  background-color: #e8a9d4;
+  display: table;
+}
+/* line 135, ../sass/main.scss */
+#name h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 142, ../sass/main.scss */
 #stopAndFrisk {
   background: red;
 }
 
-/* line 133, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 #tiltLamp {
   background: orange;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 #zenMode {
   background: yellow;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 #surrogateFlaneur {
   background: green;
 }
 
-/* line 148, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 #personalSpaceMonitor {
   background: blue;
 }
 
-/* line 153, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 #about {
   background: purple;
+}
+
+/* line 173, ../sass/main.scss */
+.markers {
+  display: table;
+  position: fixed;
+  height: 100%;
+  top: 0px;
+  right: 15px;
+  width: 15px;
+}
+
+/* line 184, ../sass/main.scss */
+.markerWrapper {
+  display: table-cell;
+  vertical-align: middle;
+  right: 15px;
+  width: 15px;
+}
+/* line 194, ../sass/main.scss */
+.markerWrapper .marker {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  background-color: #888;
+  cursor: pointer;
+}
+/* line 204, ../sass/main.scss */
+.markerWrapper #activeMarker {
+  background-color: #222;
 }

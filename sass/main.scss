@@ -66,6 +66,8 @@ table {
 
 
 
+
+
 ////////////////////////////////////
 //// THIS IS WHERE IT GETS GOOD ////
 ////////////////////////////////////
@@ -92,16 +94,6 @@ body, html
    visibility: hidden;
 }
 
-#name
-{
-   height: 100%;
-   text-align: center;
-   background-color: $pastelPink;
-   h1 {
-      margin: auto 0;
-   }
-}
-
 .slideWrapper
 {
    //position: absolute;
@@ -111,19 +103,41 @@ body, html
 }
 .slide
 {
+   //display: table;
    position: fixed;
    height: 100%;
    overflow: hidden;
    width: 100%;
+
    img{
       width: 100%;
       overflow: hidden;
+   }
+
+   h1 
+   {
+      font-size: 7em;
+      text-align: center;
    }
 }
 
 
 
 //individual slides
+#name
+{
+   cursor: s-resize;
+   text-align: center;
+   background-color: $pastelPink;
+   display: table;
+
+   h1
+   {
+      display: table-cell;
+      vertical-align: middle;   
+   }
+}
+
 #stopAndFrisk
 {
    background: red;
@@ -152,4 +166,42 @@ body, html
 #about
 {
    background: purple;
+}
+
+$markerSize: 15px;
+.markers
+{
+   display: table;
+   position: fixed;
+   height: 100%;
+   top: 0px;
+   right: $markerSize;
+   //top: 50px;
+   width: $markerSize;
+   //background: black;
+}
+.markerWrapper
+{
+   //position: fixed;
+   display: table-cell;
+   vertical-align: middle;
+
+   right: $markerSize;
+   //top: 50px;
+   width: $markerSize;
+
+   .marker
+   {
+      width: $markerSize;
+      height: $markerSize;
+      margin-bottom: 6px;
+      border-radius: 50%;
+      background-color: #888;
+      cursor: pointer;
+   }
+
+   #activeMarker
+   {
+      background-color: #222;
+   }
 }
