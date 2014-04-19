@@ -39,7 +39,7 @@ $(window).bind('scroll',function(e){
  
 function parallaxScroll(){
    var scrolled = $(window).scrollTop();
-   console.log(scrolled);
+   //console.log(scrolled);
    if(scrolled < titleHeight/3)
    {
       $('#title').css('top',(0-(scrolled*1.6))+'px');
