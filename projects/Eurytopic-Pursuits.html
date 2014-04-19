@@ -6,6 +6,15 @@
    <script src="../js/jquery-1.11.0.min.js"></script>
    <script src="../js/project.js"></script>    
    <script src="../js/processing.min.js"></script>
+
+   <!--[if lt IE 9]>
+      <script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+   <![endif]-->
+   
+   <script type="text/javascript">
+      // convenience function to get the id attribute of generated sketch html element
+      function getProcessingSketchId () { return 'EP'; }
+   </script>
 </head>
 <body>
    <div id="title">
@@ -16,6 +25,16 @@
       <img src="../img/eurytopic_pursuit.png" width="100%"></img> 
       <p>I was curious to see if my productivity was affected by a variety of spatiotemporal conditions so I built a rough device to record and log the factors that I believed to be of interest. There were specific sensors for objective measurements, such as the brightness and volume of my surroundings, as well as dials for more subjective metrics such as ambiance or personal space. Click through the diagrams below to see how they affected me.</p>
    </div>
-   <canvas data-processing-sources="hello-web.pde"></canvas>
+
+   <div id="content">
+      <div>
+         <canvas id="EP" data-processing-sources="EP/web-export/EP.pde" width="1280" height="800">
+            <p>Your browser does not support the canvas tag. Step up your game!</p>
+         </canvas>
+         <noscript>
+            <p>JavaScript is required to view the contents of this page.</p>
+         </noscript>
+      </div>
+   </div>
 </body>
 </html>
