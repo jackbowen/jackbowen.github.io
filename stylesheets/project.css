@@ -100,22 +100,23 @@ body {
   margin: 0 auto;
   text-align: center;
   color: #f39;
+  text-shadow: 2px 2px #0FF;
 }
 
-/* line 128, ../sass/project.scss */
+/* line 129, ../sass/project.scss */
 #content {
   z-index: -1;
   margin: 0 10%;
   overflow: hidden;
 }
-/* line 133, ../sass/project.scss */
+/* line 134, ../sass/project.scss */
 #content p {
   font-size: 20px;
   z-index: inherit;
   overflow: hidden;
 }
 
-/* line 149, ../sass/project.scss */
+/* line 150, ../sass/project.scss */
 #map {
   width: 100%;
 }
