@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+  <head>
+    <title>Mapping Stop + Frisk</title>
+    <meta charset="utf-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">-->
+    <link href="stylesheets/main.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/leaflet-1.0.0.min.js" type="text/javascript"></script>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/map.js" type="text/javascript"></script>
+
+  </head>
+  
+
+
+
+
+
+
+  <body onload="initMap()">
+    <span id="ruler"></span>
+
+    <div id="mapContent" class="projectContent">
+      <h1 class="projectTitle">Mapping Stop+Frisk</h1>
+
+      <img class="splashImage" src="resources/exhibit.jpg" alt="gallery display of printed maps" />
+      <p class="imageCaption">Posters on display at Columbia University's Reid Hall</p>
+
+      <p class="projectDescription">The stop-question-and-frisk program, or stop-and-frisk, is a practice of the New York City Police Department in which police officers stop and question a pedestrian, then frisk them for weapons and other contraband.<sup>1</sup> Opponents of this practice argue that it green-lights racial profiling, specifically targeting young Black and Latino males. The maps shown here are a visualization of each stop carried out due to this policy. They are meant to help illuminate whether POC, specifically those in lower-income neighborhoods are disproportionately targeted by this program. A dot is placed at the location of each stop with its color based upon the race of the person being stopped.</p>
+
+      <div id="map"></div>
+
+      <p id="mapSpacer" class="projectDescription">These maps were originally designed for print for a New York audience so there are a few assumptions made concerning the target audience’s knowledge. It is assumed that the viewer is aware of the general wealth and ethnic makeup of major neighborhoods as well as which ones are heavily populated. If you’re not familiar with NYC, see <a href="http://www.undertheraedar.com/2012/01/population-density-in-new-york-city.html">this link</a> for a quick rundown of what each borough is called and how heavily populated it is. And for a brief overview of the racial and ethnic makeup of the city see <a href="https://furmancenter.org/files/sotc/The_Changing_Racial_and_Ethnic_Makeup_of_New_York_City_Neighborhoods_11.pdf">here</a>. Take note of figure B on page 33, specifically the upper left map detailing what share of each neighborhood is made up of non-Hispanic whites. The stop-and-frisk maps generated above are essentially an inversion of this map. With this knowledge, we can begin to make some some inferences from the above maps.</p>
+
+      <p class="projectDescription">We can begin in Manhattan by looking at Central Park, the rectangular void in the middle of the island. The predominantly white neighborhoods that lie east and west of the park show noticeably less activity than the neighborhoods to the north of them despite having roughly the same population density. North of the park lies Harlem, a historically black neighborhood, where we can see a much higher concentration of stops. Northwest of Harlem is Washington Heights with its mostly black-Hispanic population. Again, we see a disproportionate number of stops. In Queens we see a cluster of stops that occur in the majority Hispanic neighborhoods of Jackson Heights and Elmhurst. South of Broadway in Brooklyn shows an alarming number of stops despite being much less populated than most of Manhattan.</p>
+
+      <p class="projectDescription">These maps were originally made in 2012 near the height of this practice. The number of stops peaked in 2011 with 685,724 stops.<sup>2</sup> Since then, the number of stops has gone down each year due to public outcry and a 2013 ruling by a U.S. District Court judge saying that the practice, but not the law behind it, was unconstitutional.<sup>3</sup> These maps were made with data published by the <a href="http://www1.nyc.gov/site/nypd/stats/reports-analysis/stopfrisk.page">NYPD</a> and the data was interpreted via a codebook published by the <a href="https://www.nyclu.org/en/stop-and-frisk-data">New York Civil Liberties Union</a>. All of the source code for this available project is available on <a href="https://github.com/jackbowen/MappingStopAndFrisk">Github</a>.</p>
+      
+      <hr />
+
+      <a class="references" href="https://en.wikipedia.org/wiki/Stop-and-frisk_in_New_York_City">1. https://en.wikipedia.org/wiki/Stop-and-frisk_in_New_York_City</a>
+      <a class="references" href="http://www.nysd.uscourts.gov/cases/show.php?db=special&id=317">2. http://www.nysd.uscourts.gov/cases/show.php?db=special&id=317</a>
+      <a class="references" id="lastReference" href="www.nysd.uscourts.gov/cases/show.php?db=special&id=317">3. www.nysd.uscourts.gov/cases/show.php?db=special&id=317</a>
+
+    </div>
+  </body>
+</html>
