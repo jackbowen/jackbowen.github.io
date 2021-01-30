@@ -13,7 +13,7 @@ var vaseCreatorSketch = function( v ) {
 
 
   // Universal GUI vars
-  //let guiFont;
+  var displayDens;
   var axisLabelSize;
   var sliderWidth = 200;
   var sliderHeight = 32;
@@ -107,7 +107,7 @@ var vaseCreatorSketch = function( v ) {
     //TODO: touch stuff
     //TODO: make lock button a darker grey whem mouse is pressed
 
-    v.pixelDensity(v.displayDensity());
+    displayDens = v.displayDensity();
 
     setupBaseUI();
 
@@ -137,6 +137,21 @@ var vaseCreatorSketch = function( v ) {
 
 
   function setupBaseUI() {
+    sliderWidth = 200 * displayDens;
+    sliderHeight = 32 * displayDens;
+    guiMargins = 15 * displayDens;
+    guiInc = sliderHeight + guiMargins;
+    guiLabelSize = 15 * displayDens;
+    guiTextPadding = 4 * displayDens;
+    sliderStart = guiMargins + 100 * displayDens;
+    sliderEnd = guiMargins + sliderWidth - 5 * displayDens;
+    sliderTickPadding = 5 * displayDens;
+
+    xSliderY = guiMargins;
+    ySliderY = xSliderY + guiInc;
+    wiggleSliderY = ySliderY + guiInc;
+    lockButtonY = wiggleSliderY + guiInc;
+
     xSlider = createSlider("width", guiMargins, xSliderY, 6, 40);
     ySlider = createSlider("height", guiMargins, ySliderY, 6, 30);
     wiggleSlider = createSlider("wiggle", guiMargins, wiggleSliderY, v.sqrt(1000), v.sqrt(5)); 
@@ -615,6 +630,12 @@ var vaseCreatorSketch = function( v ) {
     }
     roughBaseArea = xSlider.currentVal * ySlider.currentVal * v.PI;
     var maxRods = Math.floor(roughBaseArea / 55);
+
+    goBackButtonY = guiMargins;
+    numRodsSliderY = goBackButtonY + guiInc;
+    maxHeightSliderY = numRodsSliderY + guiInc;
+    purchaseButtonY = maxHeightSliderY + guiInc;
+
     goBackButton = createButton("Edit base shape", guiMargins, goBackButtonY);
     numRodsSlider = createSlider("# of elements:", guiMargins, numRodsSliderY, 3, maxRods);
     maxHeightSlider = createSlider("maxHeight", guiMargins, maxHeightSliderY, scaledRodDiameter * 20, scaledRodDiameter * 50);
