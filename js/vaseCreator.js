@@ -107,6 +107,8 @@ var vaseCreatorSketch = function( v ) {
     //TODO: touch stuff
     //TODO: make lock button a darker grey whem mouse is pressed
 
+    v.pixelDensity(v.displayDensity());
+
     setupBaseUI();
 
     var scaleMargin = .9;
