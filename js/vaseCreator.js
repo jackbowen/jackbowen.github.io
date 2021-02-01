@@ -608,6 +608,7 @@ var vaseCreatorSketch = function( v ) {
         // Purchase button
         if (v.mouseY >= purchaseButton.yPos && v.mouseY <= purchaseButton.yPos + sliderHeight) {
           state = "final";
+          finalButtonY = goBackButtonY + guiInc;
           finalButton = createButton("Confirm", guiMargins, finalButtonY);
         }
       }
