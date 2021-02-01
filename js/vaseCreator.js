@@ -104,10 +104,14 @@ var vaseCreatorSketch = function( v ) {
 
     vaseCanvas.mouseClicked(clickInteraction);
     vaseCanvas.mouseMoved(mouseMoveInteraction);
+    vaseCanvas.touchMoved(mouseMoveInteraction);
     //TODO: touch stuff
     //TODO: make lock button a darker grey whem mouse is pressed
 
     displayDens = v.displayDensity();
+    if (displayDens > 1) {
+      displayDens *= .7;
+    }
 
     setupBaseUI();
 
