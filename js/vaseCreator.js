@@ -625,7 +625,7 @@ var vaseCreatorSketch = function( v ) {
         // Confirm purchase button
         if (v.mouseY >= finalButton.yPos && v.mouseY <= finalButton.yPos + sliderHeight) {
           //state = "final";
-          alert(";)");
+          alert("not 4 sale right now ;)");
         }
       }
     }
