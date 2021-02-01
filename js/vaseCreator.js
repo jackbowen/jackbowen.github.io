@@ -91,6 +91,10 @@ var vaseCreatorSketch = function( v ) {
     }
   }
 
+  function touchMoveInteraction() {
+    sliders();
+  }
+
   v.setup = () => {
     //var baseCreatorWidth = $('.projectContent').width();
     //var baseCreatorHeight = baseCreatorWidth * .67;
@@ -104,7 +108,7 @@ var vaseCreatorSketch = function( v ) {
 
     vaseCanvas.mouseClicked(clickInteraction);
     vaseCanvas.mouseMoved(mouseMoveInteraction);
-    vaseCanvas.touchMoved(mouseMoveInteraction);
+    vaseCanvas.touchMoved(touchMoveInteraction);
     //TODO: touch stuff
     //TODO: make lock button a darker grey whem mouse is pressed
 
