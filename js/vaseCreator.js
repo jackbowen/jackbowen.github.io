@@ -91,11 +91,14 @@ var vaseCreatorSketch = function( v ) {
     }
   }
 
-  /*
+  
   function touchMoveInteraction() {
-    sliders();
+    if (v.mouseIsPressed) {
+      sliders();
+    }
+    //sliders();
   }
-  */
+  
 
   v.setup = () => {
     //var baseCreatorWidth = $('.projectContent').width();
