@@ -91,9 +91,11 @@ var vaseCreatorSketch = function( v ) {
     }
   }
 
+  /*
   function touchMoveInteraction() {
     sliders();
   }
+  */
 
   v.setup = () => {
     //var baseCreatorWidth = $('.projectContent').width();
